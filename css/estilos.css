@@ -63,7 +63,7 @@ nav a{
     padding: 20px;
     text-decoration: none;
     font-family:'Noto Sans', sans-serif;
-    
+    color: #000;
 }
 nav ul{
     width: 100%;
@@ -84,7 +84,7 @@ nav li:hover {
     flex-direction: column;
     height: 138vh;
     color: white;
-    background-image: url(./Recursos/Ihome2.jpg);
+    background-image: url(/img/Ihome2.jpg);
     background-repeat: no-repeat;
     background-size: 1400px;
     background-position: center center;
@@ -121,7 +121,7 @@ button {
 }
 button:hover {
     background-color: black;
-    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4));
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
@@ -155,7 +155,7 @@ button:active {
     font-size: xx-large;
     padding: 70px;
     justify-content: center;
-    background-image: url(./);
+    background-image: url(/img/segundafotoprin.jpg);
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,6 +217,7 @@ button:active {
     text-align: center;
     background-color: #8f8f8f;
     color: white;
+    font-size: 'Lexend Exa', sans-serif;
 }
 .piedepagina{
     font-family:'Lexend Exa', sans-serif;
@@ -539,7 +540,7 @@ input[type=text], select, textarea{
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-    font-family:'Lexend Exa', sans-serif;s
+    font-family:'Lexend Exa', sans-serif;
 }
 
 input[type=Enviar] {
@@ -589,6 +590,11 @@ input[type=Enviar]:hover {
     font-size: medium;
     text-align: right;
     padding: 100px;
+}
+.alert{
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #000;
 }
 /*Fin aboutus*/
 
