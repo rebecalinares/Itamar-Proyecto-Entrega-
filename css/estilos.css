@@ -633,3 +633,13 @@ input[type=Enviar]:hover {
     display: flex;
     margin-left: 650px;
 }
+.about{
+    background-color: black;
+    padding: 40px;
+}
+.about p{
+    font-size: x-large;
+    color: white;
+    font-family:'Lexend Exa', sans-serif;
+    text-align: center;
+}
