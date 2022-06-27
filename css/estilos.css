@@ -84,7 +84,7 @@ nav li:hover {
     flex-direction: column;
     height: 138vh;
     color: white;
-    background-image: url(/img/Ihome2.jpg);
+    background-image: url(../img/Ihome2.jpg);
     background-repeat: no-repeat;
     background-size: 1400px;
     background-position: center center;
@@ -155,7 +155,7 @@ button:active {
     font-size: xx-large;
     padding: 70px;
     justify-content: center;
-    background-image: url(/img/segundafotoprin.jpg);
+    background-image: url(../img/segundafotoprin.jpg);
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -630,4 +630,6 @@ input[type=Enviar]:hover {
 }
 .benviar{
     margin-top: 10px;
+    display: flex;
+    margin-left: 650px;
 }
