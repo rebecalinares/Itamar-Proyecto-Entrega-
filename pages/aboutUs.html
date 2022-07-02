@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>aboutus</title>
+<title>AboutUs</title>
+<link rel="icon" type="image/png" href="/img/ITAMAR.jpg"/>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@200&family=Newsreader:opsz@6..72&family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
         
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/estilos.css">
@@ -43,7 +45,6 @@
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="newArrivals.html">NEW ARRIVALS</a></li>
                 <li><a href="bags.html">BAGS</a></li>
-                <li><a href="accesorios.html">ACCESORIES</a></li>
                 <li><a href="aboutUs.html">ABOUT US</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>   
@@ -58,18 +59,16 @@
         <div class="about">
             <p>ABOUT US</p>
         </div>
-    <div class="nosotros">
-        <img src="../img/work.jpg" alt=""width="400px" height="450px">
-        <p class="parrafoin">Inmigrante Europeo, estableció su primer comercio de almacén de suelas en 1906. Auténtico, creativo, dedicado a su trabajo. Su espiritu insipira nuestra visión. Su imagen nutre nuestras generaciones de diseñadores y artesanos por mas de 100 años. Observando nuestro pasado es que forjamos nuestro futuro. Nos obliga a llevar adelante su legado icónico ahora y siempre.
-
-            Desde 1911 la empresa familiar lideró la comercialización de materia prima para la industria marroquinera. En el año 1982, la empresa hace su primera incursión en la confección de carteras con diseños vanguardistas y exclusivos. Dichos productos fueron comercializados a través del canal mayorista del sector y como accesorio para distintas marcas de indumentaria.
-            
-            Dada la gran aceptación en el mercado, la empresa decide comercializar sus productos bajo una marca propia.
-            
-            Así surge XL Extra Large, hoy símbolo de diseño, moda y calidad.
-            
-            </p>
-    </div>
+        <section data-aos="fade-up" data-aos-duration="2000" class="presentacion--invertido " > 
+            <div class="presentacion__contenedor">
+                <div class="img__contenedor">
+                    <img class="img__work" src="/img/work.jpg" alt="">
+                </div>
+                <div>
+                    <p class="presentacion__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cum qui enim nam unde explicabo quis? Saepe, culpa sint doloremque iste neque quasi explicabo! Vitae cupiditate dignissimos animi, neque asperiores tenetur consequatur soluta enim earum perferendis vel praesentium nisi eaque similique esse repellat quam ipsam ipsa illum quos maxime veritatis, accusamus quod. Ab adipisci, temporibus molestiae iste sapiente dolorum at debitis repellat atque numquam aut fugiat esse maxime autem ex nostrum voluptate officia illum reiciendis tempore cupiditate necessitatibus omnis dignissimos ipsum. Quae error ratione cum ipsam, et alias in consectetur? Impedit ab sunt vitae. Minima dicta labore, recusandae magnam rerum non at quisquam tempore facere, tempora quae illo maxime culpa minus quis cum aliquid modi quaerat alias ea ullam eaque voluptatibus. Doloribus, ex omnis! Repellat aliquam consequuntur quasi, itaque commodi adipisci nulla. Quae, eius magnam, reiciendis possimus error, quasi harum quos corrupti laudantium totam esse quia eligendi sint dicta minima.</p>   
+                </div>
+            </div>
+        </section>
     </main> 
 
 
@@ -112,5 +111,9 @@
     </footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

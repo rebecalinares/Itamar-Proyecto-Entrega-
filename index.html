@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ITAMAR</title>
+<link rel="icon" type="image/png" href="./img/ITAMAR.jpg"/>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,6 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="./pages/newArrivals.html">NEW ARRIVALS</a></li>
             <li><a href="./pages/bags.html">BAGS</a></li>
-            <li><a href="./pages/accesorios.html">ACCESORIES</a></li>
             <li><a href="./pages/aboutUs.html">ABOUT US</a></li>
             <li><a href="./pages/contacto.html">CONTACTO</a></li>
         </ul>  
@@ -58,22 +58,32 @@
         <button>SHOP NOW</button>
         </div>
 
-        <div class="promociones">
-            <ul class="promociones__ul">
-                <img src="./img/delivery.png" alt="" height="50px" width="50px">
-                <li class="promos">ENVÍOS A TODO EL PAÍS</li>
-                <img src="./img/credit-card.png" alt="" height="50px" width="50px">
-                <li class="promos">3 Y 6 CUOTAS SIN INTERÉS CON TODAS LAS TARJETAS</li>
-                <img src="./img/dollar.png" alt="" height="50px" width="50px">
-                <li class="promos">10% OFF CON TRANSFERENCIA BANCARIA</li>
-
-            </ul>
-        </div>
-
+        <!--- promociones --->
+        <section class="promociones" >
+            <div data-aos="fade-up" data-aos-duration="2000" class="promos__contenedor">
+                <div class="promos__item">
+                    <img src="./img/delivery.png" alt="" height="50px" width="50px">
+                    <p class="descripcion__toppic" >ENVÍOS A TODO EL PAÍS</p>
+                </div>
+                <div class="promos__item">
+                    <img src="./img/credit-card.png" alt="" height="50px" width="50px">
+                    <p class="descripcion__toppic" >3 Y 6 CUOTAS SIN INTERÉS CON TODAS LAS TARJETAS</p>
+                </div>
+                <div class="promos__item">
+                    <img src="./img/dollar.png" alt="" height="50px" width="50px">
+                    <p class="promos__toppic" >10% OFF CON TRANSFERENCIA BANCARIA</p>
+                </div>
+            </div>
+    
+        </section>
     </main>
     <aside class="aside">
         <div class="descubre">
-            <p>Descubrí más sobre nuestros productos</p>
+            <button><a href="./pages/newArrivals.html"> Descubrí más sobre nuestros productos</a>
+            </button>
+        </div>
+        <div class="footer__logo">
+            <img src="./img/itamarlogofooter.jpg" alt="Logo" >
         </div>
         <div class="made">
             <p>MADE WITH LOVE</p>

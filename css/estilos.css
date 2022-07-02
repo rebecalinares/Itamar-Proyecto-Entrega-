@@ -2,24 +2,9 @@
     padding : 0;
     margin : 0;
     box-sizing: border-box;
+}
 
-}
 /*Inicio Index-pag principal-*/
-.body {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas:"header header header header header header"
-                        "navbar navbar navbar navbar navbar navbar"
-                        "main   main   main   main   main   main"
-                        "aside  aside  aside  aside  aside  aside"
-                        "footer footer footer footer footer footer";
-                        
-                        
-}
-.header{
-    grid-area: header;
-}
 .cuotas{
     text-align: center;
     font-size: 15px;
@@ -73,9 +58,6 @@ nav ul{
 nav li:hover {
     background-color: rgb(243, 240, 241);
 }
-.main{
-    grid-area: main;
-}
 .fondoprincipal{
     display: flex;
     align-items: center;
@@ -91,7 +73,6 @@ nav li:hover {
     font-size: xx-large;
     font-family:'Lexend Exa', sans-serif;
 }
-
 .bandoleraA{
     padding-right: 414px;
     margin-top: 150px;
@@ -103,7 +84,6 @@ nav li:hover {
     padding-left: 328px;
     margin-bottom: 150px;
 }
-
 button {
     padding: 1.3em 3em;
     font-size: 12px;
@@ -127,25 +107,36 @@ button:hover {
 }
 button:active {
     transform: translateY(-1px);
+    color: white;
 }
 .promociones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #EEF1E5;
-    width: 100%;
-    height: 100%;
-    line-height: 15px;
-    padding: 30px;
     font-family:'Lexend Exa', sans-serif;
 }
-.promos {
-    padding: 20px;
+.promos__contenedor {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center; 
 }
-.promociones__ul{
+.promos__item {
     display: flex;
-    margin: 0% auto;
-    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem; 
+}
+.promos__item i {
+    font-size: 2rem; 
+}
+.promos__toppic {
+    margin: auto;
+    padding: 1rem;
+    color: #2D2D2D;
+    font-size: 14px;
+    font-style: normal;
+    text-align: center; 
 }
 .aside{
     background-color: white;
@@ -154,7 +145,6 @@ button:active {
 .descubre{
     font-size: xx-large;
     padding: 70px;
-    justify-content: center;
     background-image: url(../img/segundafotoprin.jpg);
     overflow: hidden;
     background-size: cover;
@@ -163,7 +153,9 @@ button:active {
     height: 488px;
     width: 80%;
     margin: 5% auto;
-    border: black 2px solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .descubre img{
     width: 150%;
@@ -171,15 +163,11 @@ button:active {
     border-color: black;
     border-style: solid;
 }
-.descubre p{
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    background-color: white;
-    align-items: center;
-    border-radius: 20px;
-    position: center;
-    margin-top: 150px;
+.descubre button a{
+    text-decoration: none;
+}
+.descubre button a:hover{
+    color: white;
 }
 .made p{
     text-align: center; 
@@ -203,6 +191,15 @@ button:active {
 .footer li{
     list-style-type: none;
 }
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__logo img{
+    width: 170px;
+    height: 50px;
+}
 .fcaja{
     display: flex;
     margin: 0% auto;
@@ -212,12 +209,6 @@ button:active {
     justify-content: space-evenly;
     align-items: center;
     padding: 50px;
-}
-.fijo{
-    text-align: center;
-    background-color: #8f8f8f;
-    color: white;
-    font-size: 'Lexend Exa', sans-serif;
 }
 .piedepagina{
     font-family:'Lexend Exa', sans-serif;
@@ -257,15 +248,201 @@ button:active {
 .mail li{
     padding-left: 5px;
 }
-
-.promociones__ul img{
-    position: sticky;
+.fijo{
+    text-align: center;
+    background-color: #8f8f8f;
+    color: white;
+    font-size: smaller;
+    font-family: 'Lexend Exa', sans-serif;
 }
-
 /*Fin Index-pag principal*/
 
+
+/*Inicio New Arrival*/
+.newarr{
+    background-color: black;
+    padding: 45px;
+    text-align: center;
+}
+.newarr b{
+    font-size: x-large;
+    color: white;
+    font-family:'Lexend Exa', sans-serif;
+}
+.newarri{
+    background-color: #E6D64B;
+}
+.p1{
+    font-size: 80px;
+    font-family:'Lexend Exa', sans-serif;
+    color: white;
+    text-shadow: 0 0 12px #000;
+    padding-left: 20px;
+}
+.p2{
+    font-size: 80px;
+    font-family:'Lexend Exa', sans-serif;
+    color: white;
+    text-align: right;
+    text-shadow: 0 0 12px #000;
+    padding-right: 20px;
+}
+.contenido{
+    background-color: white;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    margin: 55px;
+}
+.gridItem{
+    width: 300px;
+}
+.contenido img{
+    width: 80%;
+    height: 100%;
+}
+/*Fin New Arrival*/
+
+/*Inicio Bags*/
+.bags{
+    background-color: black;
+    padding: 40px;
+}
+.bags p{
+    font-size: x-large;
+    color: white;
+    font-family:'Lexend Exa', sans-serif;
+    text-align: center;
+}
+.cardcontenedor {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s; 
+}
+.cardVenta__producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+.CardVenta__producto {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 3;
+    justify-content: baseline;
+    align-content: center;
+    height: 100%;
+    position: relative; 
+}
+.cardVenta {
+    background-color: #F9F8F8;
+    padding: 1rem; 
+}
+.cardVenta__contenedor {
+    background-color: #F9F8F8;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    position: relative;
+    height: 100%; 
+}
+.card-body button{
+    margin-top: 20px;
+}
+
+.presentacion__contenedor {
+    background-color: white;
+    padding: 1rem 0rem 1rem 1rem; 
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-between;
+    position: relative; 
+}
+
+/*Fin Bags*/
+
+/* Inicio aboutus*/
+.about{
+    background-color: black;
+    padding: 40px;
+}
+.about p{
+    font-size: x-large;
+    color: white;
+    font-family:'Lexend Exa', sans-serif;
+    text-align: center;
+}
+.presentacion__contenedor {
+    background-color: white;
+    padding: 1rem 0rem 1rem 1rem; 
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-between;
+    position: relative; 
+}
+.presentacion__p{
+    font-family:'Lexend Exa', sans-serif;
+}
+.img__work{
+    height: 500px;
+    width: 500px;
+}
+/*Fin aboutUs*/
+
+
+/*Inicio Contactos*/
+
+.contacto form{
+    margin: 50px;
+}
+.contacto{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+    font-family:'Lexend Exa', sans-serif;
+    font-size: medium;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family:'Lexend Exa', sans-serif;
+}
+
+input[type=Enviar] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=Enviar]:hover {
+    background-color: #45a049;
+}
+/*Fin Contactos*/
+
+
+
+
 /*INICIO RESPONSIVE INDEX*/
-@media screen and (max-width:576px){
+@media screen and (max-width:600px){
 
     .fondoprincipal{
         background-size: 890px;
@@ -304,9 +481,11 @@ button:active {
     .descubre p{
         margin-top: 30px;
     }
-
     .header{
         grid-area: header;
+    }
+    .promos__contenedor {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -375,57 +554,8 @@ button:active {
 }
 /*FIN RESPONSIVE INDEX*/
 
-/*Inicio New Arrival*/
-
-.newarr{
-    background-color: black;
-    padding: 45px;
-    text-align: center;
-}
-.newarr b{
-    font-size: x-large;
-    color: white;
-    font-family:'Lexend Exa', sans-serif;
-}
-.newarri{
-    background-color: #E6D64B;
-    padding: 30px;
-}
-.p1{
-    font-size: 100px;
-    font-family:'Lexend Exa', sans-serif;
-    color: white;
-    text-shadow: 0 0 12px #000;
-    
-}
-.p2{
-    font-size: 100px;
-    font-family:'Lexend Exa', sans-serif;
-    color: white;
-    text-align: right;
-    text-shadow: 0 0 12px #000;
-}
-.contenido{
-    background-color: white;
-    width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-    grid-gap: 20px;
-    margin: 55px;
-}
-.gridItem{
-    width: 300px;
-}
-.contenido img{
-    width: 80%;
-    height: 100%;
-}
-
-/*Fin New Arrival*/
-
 /*INICIO RESPONSIVE NEW ARRIVAL*/
-@media screen and (max-width:576px){
+@media screen and (max-width:600px){
     .contenido{
         background-color: white;
         width: 100%;
@@ -451,195 +581,46 @@ button:active {
         font-size: 50px;
     }
 }
-
 /*FIN RESPONSIVE NEW ARRIVAL*/
 
-/*Inicio Bags*/
-.bags{
-    background-color: black;
-    padding: 40px;
-}
-.bags p{
-    font-size: x-large;
-    color: white;
-    font-family:'Lexend Exa', sans-serif;
-    text-align: center;
-}
-.contbags img{
-    border-radius: 40px;
-    padding: 20px;
-}
-.contbags{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    padding: 30px;
-}
-.contbags p{
-    text-align: center;
-    padding: 20px;
-    font-size: x-large;
-    color:black;
-    font-family:'Lexend Exa', sans-serif;
-    background-color: pink;
-}
-.imagenesb{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.imagenesb button{
-    background-color: black;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
-}
-/*Fin Bags*/
 
-/* INICIO RESPONSIVE BAGS*/
-@media screen and (max-width:576px){
-    .contbags{
-        display: flex;
-        flex-direction: column;
-    }
-    .imagenesb{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 40px;
-    }
+/*INICIO RESPONSIVE BAGS*/
+@media screen and (max-width: 600px) {
+    .cardVenta__contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        height: auto; 
+    } 
+}
+@media screen and (max-width: 391px) {
+    .cardVenta__contenedor {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem; 
+    } 
 }
 /*FIN RESPONSIVE BAGS*/
 
-/*Inicio Contactos*/
 
-.contacto form{
-    margin: 50px;
-}
-.contacto{
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-}
-input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    resize: vertical;
-    font-family:'Lexend Exa', sans-serif;
-    font-size: medium;
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    font-family:'Lexend Exa', sans-serif;
-}
-
-input[type=Enviar] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-input[type=Enviar]:hover {
-    background-color: #45a049;
-}
-
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
-
-
-/* Inicio aboutus*/
-.nosotros{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-.parrafoin{
-    font-family:'Lexend Exa', sans-serif;
-    font-size: medium;
-    text-align: right;
-    padding: 100px;
-}
-.alert{
-    background-color: #f2f2f2;
-    color: #000;
-}
-/*Fin aboutus*/
-
-/*INICIO RESPONSIVE ABOUT US*/
-@media screen and (max-width:576px){
-    .nosotros{
+/*INICIO RESPONSIVE ABOUTUS*/
+@media screen and (max-width: 600px) {
+    .presentacion--invertido, .presentacion__contenedor{
+        padding: 1rem;
+        grid-template-columns: 1fr;} 
+    .img__work{
+        width: 300px;
+        height: 300px;}   
+    .img__contenedor{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .nosotros img{
-        padding-top: 20px;
-    }
-    .nosotros p{
-        padding-top: 40px;
-        text-align: center;
-    }
+        flex-direction: row;
+        justify-content: space-evenly;}
 }
-/*FIN RESPONSIVE ABOUT US*/
+/*FIN RESPONSIVE ABOUTUS*/
 
-/*Inicio Contacto*/
-.cajafor{
-    width: 100%;
-    height: 650px;
-    background: rgb(255, 255, 255);
-    border-radius: 0.4em;
-    box-shadow: 0.3em 0.3em 0.7em #00000015;
-    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: rgb(250, 250, 250) 0.2em solid;
+/*INICIO RESPONSIVE CONTACTO*/
+@media screen and (max-width: 391px) {
+    .contacto{
+        padding-top: 0px;
+        padding-left: 30px;
+        padding-right: 15px}
 }
-
-.cajafor:hover {
- border: #000 0.2em solid;
-}
-.benviar{
-    margin-top: 10px;
-    display: flex;
-    margin-left: 650px;
-}
-.about{
-    background-color: black;
-    padding: 40px;
-}
-.about p{
-    font-size: x-large;
-    color: white;
-    font-family:'Lexend Exa', sans-serif;
-    text-align: center;
-}
+/*FIN RESPONSIVE CONTACTO*/
